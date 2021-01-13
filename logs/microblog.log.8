@@ -1,0 +1,98 @@
+2021-01-11 16:01:11,019 ERROR: Exception on /search [GET]             [in /home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/main/routes.py", line 167, in search
+    if total > page * current_app.config['POSTS_PER_PAGE'] else None
+TypeError: '>' not supported between instances of 'dict' and 'int'
+2021-01-11 16:01:50,957 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-11 16:04:40,401 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-11 16:04:40,938 ERROR: Exception on /search [GET]             [in /home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/main/routes.py", line 171, in search
+    next_url = next_url, prev_url = prev_url)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/templates/search.html", line 24, in template
+    {% enblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'enblock'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2021-01-11 16:08:16,446 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-11 16:08:40,806 ERROR: Exception on /search [GET]             [in /home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/main/routes.py", line 171, in search
+    next_url=next_url, prev_url=prev_url)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/templating.py", line 138, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 930, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 883, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 857, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/loaders.py", line 127, in load
+    code = environment.compile(source, name, filename)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 638, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/templates/search.html", line 24, in template
+    {% enblock %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'enblock'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2021-01-11 16:09:13,291 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-11 17:46:48,578 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]

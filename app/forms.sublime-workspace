@@ -1,0 +1,408 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"index"
+			],
+			[
+				"for",
+				"form"
+			],
+			[
+				"acc",
+				"accept-charset\tAttr"
+			],
+			[
+				"met",
+				"method\tAttr"
+			],
+			[
+				"E",
+				"Email"
+			],
+			[
+				"Us",
+				"User"
+			],
+			[
+				"S",
+				"SubmitField"
+			],
+			[
+				"Pa",
+				"Password"
+			],
+			[
+				"next",
+				"next_page"
+			],
+			[
+				"login_",
+				"login_required"
+			],
+			[
+				"url",
+				"url_for"
+			],
+			[
+				"nex",
+				"next_page"
+			],
+			[
+				"lo",
+				"logout"
+			],
+			[
+				"log",
+				"login_user"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"U",
+				"UserMixin"
+			],
+			[
+				"che",
+				"check_password_hash"
+			],
+			[
+				"pa",
+				"password"
+			],
+			[
+				"p",
+				"password"
+			],
+			[
+				"pas",
+				"password_hash"
+			],
+			[
+				"d",
+				"db"
+			],
+			[
+				"movi",
+				"movie"
+			],
+			[
+				"k",
+				"keywords"
+			],
+			[
+				"movie",
+				"movieid"
+			],
+			[
+				"sp",
+				"span\tTag"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"thre",
+				"threads"
+			],
+			[
+				"h1",
+				"h1\tTag"
+			],
+			[
+				"w",
+				"wtforms"
+			],
+			[
+				"hr",
+				"hr\tTag"
+			],
+			[
+				"div",
+				"div\tTag"
+			],
+			[
+				"htm",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"ht",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"if",
+				"iframe\tTag"
+			],
+			[
+				"h",
+				"html5\tSimple HTML5 Boilerplate"
+			],
+			[
+				"file",
+				"file_name"
+			],
+			[
+				"fil",
+				"file_name"
+			],
+			[
+				"fr",
+				"fr"
+			],
+			[
+				"thr",
+				"threads"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"P",
+				"Package Control: List Packages"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"color ",
+				"UI: Select Color Scheme"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"Pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/lev/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/lev/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_login/login_manager.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_migrate/__init__.py",
+		"/home/lev/.config/sublime-text-3/Packages/Jedi - Python autocompletion/dependencies/jedi/third_party/typeshed/third_party/2and3/flask/app.pyi",
+		"/home/lev/.config/sublime-text-3/Packages/Jedi - Python autocompletion/Default.sublime-keymap",
+		"/home/lev/.local/lib/python3.6/site-packages/msgpack/__init__.py",
+		"/home/lev/.config/sublime-text-3/Packages/Jedi - Python autocompletion/Default.sublime-mousemap",
+		"/usr/lib/python3.6/http/__init__.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/pip/index.py",
+		"/home/lev/.config/sublime-text-3/Packages/User/Default.sublime-mousemap",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/app/templates/register.html",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/app/forms.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/wtforms/fields/core.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_wtf/form.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/app/routes.py",
+		"/home/lev/.config/sublime-text-3/Packages/PackageResourceViewer/PackageResourceViewer.sublime-settings",
+		"/home/lev/.config/sublime-text-3/Packages/User/PackageResourceViewer.sublime-settings",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/app/templates/login.html",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/wtforms/validators.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/app/models.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/app/templates/base.html",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/app/templates/index.html",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_login/utils.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_login/mixins.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/sql/functions.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/microblog.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/werkzeug/security.py",
+		"/home/lev/Desktop/MAI/multireading.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/orm/__init__.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/sql/schema.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/config.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/sql/sqltypes.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/alembic/autogenerate/render.py",
+		"/home/lev/Desktop/MAI/data_management/docker_compose/data_client/app/src/simple_service.py",
+		"/home/lev/Desktop/MAI/moove.sql",
+		"/home/lev/Desktop/MAI/hw_3.sql",
+		"/home/lev/Desktop/MAI/data_management/hw4.sql",
+		"/home/lev/Desktop/MAI/data_management/data_tools/extract_zipped_data.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/werkzeug/datastructures.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/helpers.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/templating.py",
+		"/home/lev/Desktop/MAI/show_all_files.py",
+		"/home/lev/Desktop/MAI/test_thread.py",
+		"/home/lev/Desktop/MAI/multithreading.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/pip/req/req_install.py",
+		"/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/click/_compat.py",
+		"/home/lev/.config/sublime-text-3/Packages/Monokai Extended/Monokai Extended Bright.tmTheme",
+		"/home/lev/.config/sublime-text-3/Packages/Monokai Extended/Monokai Extended Bright.JSON-tmTheme",
+		"/home/lev/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/home/lev/.config/sublime-text-3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/home/lev/.config/sublime-text-3/Packages/User/HTMLBeautify.sublime-settings",
+		"/home/lev/Desktop/MAI/file_read.py",
+		"/home/lev/Desktop/MAI/hw_2.sql"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 38.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "forms.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"flask_microblog/app/routes.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 166.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

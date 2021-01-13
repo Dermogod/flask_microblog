@@ -1,0 +1,71 @@
+2021-01-13 16:10:19,130 ERROR: Exception on /auth/login [POST]             [in /home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/auth/routes.py", line 21, in login
+    user = User.query.filter_by(username = form.username.data).first()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3429, in first
+    ret = list(self[0:1])
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3203, in __getitem__
+    return list(res)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/orm/query.py", line 3560, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1130, in _execute_clauseelement
+    distilled_params,
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1317, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1511, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1277, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 593, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: user
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.email AS user_email, user.password_hash AS user_password_hash, user.about_me AS user_about_me, user.last_seen AS user_last_seen 
+FROM user 
+WHERE user.username = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('Lev', 1, 0)]
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+2021-01-13 16:11:48,797 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:12:42,478 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:13:00,596 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:13:05,621 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:13:07,899 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:13:16,121 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:13:21,603 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:14:21,407 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:14:59,911 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:17:41,833 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:20:24,874 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:23:04,767 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:24:22,147 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:24:32,469 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-13 16:26:58,911 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]

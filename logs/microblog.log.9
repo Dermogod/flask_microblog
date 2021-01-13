@@ -1,0 +1,111 @@
+2021-01-09 12:44:16,303 ERROR: Exception on /favicon.ico [GET]             [in /home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2242, in preprocess_request
+    rv = func()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/main/routes.py", line 21, in before_request
+    g.locale = str(get_locale())
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_babel/__init__.py", line 226, in get_locale
+    rv = babel.locale_selector_func()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py", line 115, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+NameError: name 'app' is not defined
+2021-01-09 12:44:17,280 ERROR: Exception on /index [GET]             [in /home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1948, in full_dispatch_request
+    rv = self.preprocess_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2242, in preprocess_request
+    rv = func()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/main/routes.py", line 21, in before_request
+    g.locale = str(get_locale())
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_babel/__init__.py", line 226, in get_locale
+    rv = babel.locale_selector_func()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py", line 115, in get_locale
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
+NameError: name 'app' is not defined
+2021-01-09 12:45:44,955 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:108]
+2021-01-09 12:45:50,438 ERROR: Exception on /index [GET]             [in /home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/main/routes.py", line 46, in index
+    page, app.config['POSTS_PER_PAGE'], False )
+NameError: name 'app' is not defined
+2021-01-09 12:48:22,370 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:108]
+2021-01-09 12:48:44,710 ERROR: Exception on /unfollow/User [POST]             [in /home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/main/routes.py", line 142, in unfollow
+    flash(_('You are not following %(username)s anymore.', username))
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_babel/__init__.py", line 689, in gettext
+    return get_domain().gettext(*args, **kwargs)
+TypeError: gettext() takes 2 positional arguments but 3 were given
+2021-01-09 12:52:39,184 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:108]
+2021-01-09 13:37:16,347 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:108]
+2021-01-09 13:52:24,509 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:108]
+2021-01-09 15:36:22,508 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-11 13:59:49,983 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-11 14:01:18,707 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-11 15:53:07,069 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
+2021-01-11 15:53:22,754 ERROR: Exception on /search [GET]             [in /home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/myvenv/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/lev/Desktop/vscode_projects/flask_microblog/app/main/routes.py", line 167, in search
+    if total > page * current_app.config['POSTS_PER_PAGE'] else None
+TypeError: '>' not supported between instances of 'dict' and 'int'
+2021-01-11 16:01:09,586 INFO: Microblog startup             [in /home/lev/Desktop/vscode_projects/flask_microblog/app/__init__.py:114]
