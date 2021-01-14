@@ -16,7 +16,10 @@ __pycache__/
 # C extensions
 *.so
 
+# certs
 certs/
+
+# logs
 logs/
 
 # Distribution / packaging
@@ -65,11 +68,8 @@ coverage.xml
 .pytest_cache/
 pytestdebug.log
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# Translations
+*.mo
 
 # Flask stuff:
 instance/
@@ -116,6 +116,7 @@ celerybeat.pid
 .venv
 env/
 venv/
+myvenv/
 ENV/
 env.bak/
 venv.bak/
