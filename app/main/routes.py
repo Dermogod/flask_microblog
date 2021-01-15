@@ -9,8 +9,8 @@ from app.main.forms import EditProfileForm, EmptyForm, PostForm, SearchForm
 from app.models import User, Post
 from app.translate import translate
 from app.main import bp
-#from langdetect import detect #language detection
-from textblob import TextBlob #analogue to google`s langdetect
+from langdetect import detect #language detection
+#from textblob import TextBlob #analogue to google`s langdetect
 
 @bp.before_app_request
 def before_request():
@@ -28,9 +28,9 @@ def index():
     form = PostForm()
 
     if form.validate_on_submit(): #add new posts
-        #language = detect(form.post.data)
         try:
-            language = TextBlob(form.post.data).detect_language()
+            language = detect(form.post.data)
+            #language = TextBlob(form.post.data).detect_language()
         except: #except TranslatorError:
             language = ''
 
@@ -164,13 +164,18 @@ def search():
         page = request.args.get('page', 1, type = int)
         posts, total = Post.search(g.search_form.q.data, page,
             current_app.config['POSTS_PER_PAGE'])
+        if total == 0:
+            raise
     except: # in case no search results
         flash(_('Unfortunately, no search results for %(q)s.', 
             q = g.search_form.q.data))
         return redirect(url_for('main.explore'))
 
+    if type(total) != int: #then 'dict': {'value': N, 'relation': 'eq'}
+        total = total['value']
+
     next_url = url_for('main.search', q=g.search_form.q.data, page=page + 1) \
-        if total['value'] > page * current_app.config['POSTS_PER_PAGE'] else None
+        if total > page * current_app.config['POSTS_PER_PAGE'] else None
     prev_url = url_for('main.search', q=g.search_form.q.data, page=page - 1) \
         if page > 1 else None
     return render_template('search.html', title=_('Search'), posts=posts,
