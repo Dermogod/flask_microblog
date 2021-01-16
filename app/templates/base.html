@@ -69,8 +69,7 @@
 
     {# JQuery script for translating text using AJAX and with promises #}
     <script>
-        function translate(sourceElem, destElem, sourceLang, destLang)
-        {
+        function translate(sourceElem, destElem, sourceLang, destLang) {
             $(destElem).html('<img src="{{ url_for('static', filename='loading.gif') }}">');
 
             // $.post(<url>, <data>).done().fail()
@@ -86,5 +85,49 @@
                 $(destElem).text("{{ _('Error: Could not contact server.') }}");
             });
         }
+        $(function () {
+            var timer = null;
+            var xhr = null;
+            $('.user_popup').hover(
+                function(event) {
+                    // mouse in event handler
+                    var elem = $(event.currentTarget);
+                    timer = setTimeout(function() {
+                        timer = null;
+                        xhr = $.ajax(
+                            '/user/' + elem.first().text().trim() + '/popup').done(
+                                function(data) {
+                                    xhr = null;
+                                    // creating pop-up window
+                                    elem.popover({
+                                        trigger: 'manual',
+                                        html: true,
+                                        animation: false,
+                                        container: elem,
+                                        content: data
+                                    }).popover('show');
+                                    flask_moment_render_all();
+                                }
+                            );
+                    }, 1000);
+                },
+                function(event) {
+                    // mouse out event handler
+                    var elem = $(event.currentTarget);
+                    if (timer) {
+                        clearTimeout(timer);
+                        timer = null;
+                    }
+                    else if (xhr) {
+                        xhr.abort();
+                        xhr = null;
+                    }
+                    else {
+                        // destroying pop-up window
+                        elem.popover('destroy');
+                    }
+                }
+            );
+        });
     </script>
 {% endblock %}
