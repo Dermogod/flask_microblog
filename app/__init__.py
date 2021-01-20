@@ -11,6 +11,8 @@ from flask_moment import Moment #timezone
 from flask_babel import Babel, lazy_gettext as _l #i18n and l10n support
 import os
 from elasticsearch import Elasticsearch
+from redis import Redis
+import rq
 
 # use SQLAlchemy for database management
 db = SQLAlchemy()
@@ -57,6 +59,10 @@ def create_app(config_class = Config):
     # init elasticsearch instance
     app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']]) \
         if app.config['ELASTICSEARCH_URL'] else None
+
+    # init RQ
+    app.redis = Redis.from_url(app.config['REDIS_URL'])
+    app.task_queue = rq.Queue('microblog-tasks', connection = app.redis)
 
     # blueprint reg for errors module
     from app.errors import bp as errors_bp

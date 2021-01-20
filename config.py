@@ -25,6 +25,9 @@ class Config(object):
     # enable Elasticsearch
     ELASTICSEARCH_URL = os.environ.get('ELASTICSEARCH_URL')
 
+    # enable Redis for RQ
+    REDIS_URL = os.environ.get('REDIS_URL') or 'redis://'
+
     #Enable email notifications
     MAIL_SERVER = os.environ.get('MAIL_SERVER')
     MAIL_PORT = int(os.environ.get('MAIL_PORT') or 25)

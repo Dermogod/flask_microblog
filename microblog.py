@@ -1,5 +1,5 @@
 from app import create_app, db, cli
-from app.models import User, Post, Notification, Message
+from app.models import User, Post, Notification, Message, Task
 
 # initialize application global variable
 app = create_app()
@@ -11,4 +11,4 @@ cli.register(app)
 def make_shell_context():
 	'''default import modules for flask shell'''
 	return {'db': db, 'User': User, 'Post' : Post, 'Message': Message,
-        'Notification': Notification}
+        'Notification': Notification, 'Task': Task}
